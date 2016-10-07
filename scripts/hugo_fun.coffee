@@ -35,3 +35,16 @@ module.exports = (robot) ->
 
   robot.hear /Build.*of.*@.*by.*failed in/, (res) ->
   	res.send res.random failedBuild
+
+  sleepyTime = [
+      'http://farm3.static.flickr.com/2318/1520698819_6bd291bfdc_m.jpg',
+      'http://i.imgur.com/BEZFF.jpg',
+      'http://2.bp.blogspot.com/-VGFjz-oiyxg/U0itxAp0BuI/AAAAAAAAIBM/oO2b7l-6u9U/s1600/lolcat-hates-mornings.jpg',
+      'https://s-media-cache-ak0.pinimg.com/236x/77/1b/7d/771b7d63890e72ddd494572e6ba6b937.jpg',
+      'http://img.photobucket.com/albums/v91/jungle_goddess/Misc/LOLCatsIWillSleepHere.jpg',
+      'http://1.bp.blogspot.com/-PNPTjlGrnMM/UScj4SSiNnI/AAAAAAAAErs/lnYrIM7_T1E/s1600/sleep-escape-lolcat.jpg',
+      'https://s-media-cache-ak0.pinimg.com/originals/f7/f0/a9/f7f0a923bc87d04b36e76e3c71d7bef5.jpg'
+  ]
+
+  robot.hear /\bsleep|\bbed|\btired/i, (res) ->
+    res.send res.random sleepyTime
