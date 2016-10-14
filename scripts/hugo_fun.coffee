@@ -36,6 +36,9 @@ module.exports = (robot) ->
   robot.hear /Build.*of.*@.*by.*failed in/, (res) ->
   	res.send res.random failedBuild
 
+  robot.hear /Build.*of.*@.*by.*passed in/, (res) ->
+    res.send "/giphy You Rock!"
+
   sleepyTime = [
       'http://farm3.static.flickr.com/2318/1520698819_6bd291bfdc_m.jpg',
       'http://i.imgur.com/BEZFF.jpg',
