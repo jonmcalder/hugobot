@@ -30,14 +30,30 @@ module.exports = (robot) ->
       'https://cdn.meme.am/instances/500x/61072889.jpg',
       'https://cdn.meme.am/instances/62436890.jpg',
       'https://camo.githubusercontent.com/6611c59c06fb0d44cea332575ba3795d8fe15117/68747470733a2f2f7261772e6769746875622e636f6d2f61686d65646e75616d616e2f6d656d652d736179732d6a656e6b696e732f6d61737465722f6173736574732f696d672f6275696c642d79656c6c6f772e6a7067',
-      'https://raw.githubusercontent.com/ferdingler/alexa-skill-jenkins/master/page/who-broke-the-build.jpg'
+      'https://raw.githubusercontent.com/ferdingler/alexa-skill-jenkins/master/page/who-broke-the-build.jpg',
+      'http://www.imagefully.com/wp-content/uploads/2015/08/Funny-Lol-Cat-Computer-On-Image.jpg',
+      'http://i.stack.imgur.com/3Fg7s.jpg'
   ]
 
   robot.hear /Build.*of.*@.*by.*failed in/, (res) ->
   	res.send res.random failedBuild
 
+  passedBuild = [
+      'https://theskinnyonmyjeans.files.wordpress.com/2012/08/lolcat-hooray.jpg',
+      'http://i181.photobucket.com/albums/x238/ali_squidz/lolcats/funny-pictures-proud-cat.jpg',
+      'http://2.bp.blogspot.com/-SibDP9asPIs/VjPItoBf4FI/AAAAAAAAO4s/5DkOelMkAlI/s1600/really_yay_lolcats.jpeg',
+      'http://4.bp.blogspot.com/-9YULmt57Y68/UqOZ6WItyUI/AAAAAAAAHFo/P3c2-NIEwfw/s1600/whew-close-call-lolcat.jpg',
+      'http://d22zlbw5ff7yk5.cloudfront.net/images/stash-1-954fd365adce348.jpeg',
+      'https://s-media-cache-ak0.pinimg.com/564x/a3/9b/91/a39b9120d5df1a34cbae8cfb99cfeed6.jpg',
+      'http://media-cache-ak0.pinimg.com/736x/e8/d2/0a/e8d20af6ba9e5e4f1d7243b555cc2b16.jpg',
+      'http://i464.photobucket.com/albums/rr3/Delaney_Gaara/Lol%20Cats/untitled.jpg',
+      'https://rebuildingholly.files.wordpress.com/2012/05/huzzah-lolcat.jpg',
+      'http://www.aspectofthehare.net/wp-content/uploads/2010/06/happy_lolcat.jpg',
+      'http://67.media.tumblr.com/0d8e767123ebd3b1cf2870ed0433a4a0/tumblr_inline_odd3fcGwAw1raprkq_500.gif'
+  ]
+
   robot.hear /Build.*of.*@.*by.*passed in/, (res) ->
-    res.send "/giphy You Rock!"
+    res.send res.random passedBuild
 
   sleepyTime = [
       'http://farm3.static.flickr.com/2318/1520698819_6bd291bfdc_m.jpg',
