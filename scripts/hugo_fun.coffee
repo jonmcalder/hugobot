@@ -2,9 +2,8 @@
 # Just some (hopefully) amusing listen/respond examples to give Hugo a bit of personality.
 #
 # Notes:
-# The idea here is to start simple and grow.morph these over time if/when they get stale or irritating. 
-# Hopefully over time I can learn a little more and introduce some more interesting functionality
-#
+# The idea here is to start simple and grow/morph these over time if/when they get stale or irritating. 
+# Hopefully over time I can introduce some more interesting functionality as I learn.
 
 module.exports = (robot) ->
 
